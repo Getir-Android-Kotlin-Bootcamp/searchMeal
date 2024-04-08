@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Food Couriers</string>
+    <string name="food_couriers">Food Couriers</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="create_account">Create Account</string>
+    <string name="login">Login</string>
+    <string name="hello_blank_fragment">hello_blank_fragment</string>
+    <string name="search_edt">Search</string>
+    <string name="meal_menu">Meal Menu</string>
+</resources>

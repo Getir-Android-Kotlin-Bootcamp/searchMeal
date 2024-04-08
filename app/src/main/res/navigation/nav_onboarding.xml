@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_onboarding"
+    app:startDestination="@id/onboardingFavoritiesFragment">
+
+    <fragment
+        android:id="@+id/onboardingFavoritiesFragment"
+        android:name="com.getir.patika.foodcouriers.OnboardingFavoritiesFragment"
+        android:label="OnboardingFavoritiesFragment"
+        tools:layout="@layout/fragment_onboarding_favorities">
+        <action
+            android:id="@+id/action_onboardingFavoritiesFragment_to_onboardingCheapFragment"
+            app:destination="@id/onboardingCheapFragment" />
+        <action
+            android:id="@+id/action_onboardingFavoritiesFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_onboardingFavoritiesFragment_to_searchFragment2"
+            app:destination="@id/searchFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingCheapFragment"
+        android:name="com.getir.patika.foodcouriers.OnboardingCheapFragment"
+        android:label="OnboardingCheapFragment"
+        tools:layout="@layout/fragment_onboarding_cheap">
+        <action
+            android:id="@+id/action_onboardingCheapFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.getir.patika.foodcouriers.presentation.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_setLocationFragment2"
+            app:destination="@id/setLocationFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/setLocationFragment2"
+        android:name="com.getir.patika.foodcouriers.SetLocationFragment"
+        android:label="fragment_set_location"
+        tools:layout="@layout/fragment_set_location" />
+    <fragment
+        android:id="@+id/searchFragment2"
+        android:name="com.getir.patika.foodcouriers.presentation.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+</navigation>

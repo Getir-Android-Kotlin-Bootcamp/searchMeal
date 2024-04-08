@@ -1,0 +1,61 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/imgSearchMeal"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/account" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/searchMealName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Chicken Spaghetti" />
+
+            <TextView
+                android:id="@+id/searchMealDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#3B3B3B"
+                android:alpha="0.2"
+                android:text="1 Big Pack" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mealPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$7"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:textColor=" #D61355"
+            android:layout_marginEnd="30dp"
+            />
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

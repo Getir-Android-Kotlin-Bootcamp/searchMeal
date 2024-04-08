@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip"
+        android:layout_width="126dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Burger"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:chipBackgroundColor="#D61355"
+        app:chipMinTouchTargetSize="0dp"
+        app:chipStrokeWidth="0.7dp"
+        app:chipStrokeColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
